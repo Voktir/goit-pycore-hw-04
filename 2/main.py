@@ -10,5 +10,5 @@ def get_cats_info(path):
 
     return lst
 
-cats_info = get_cats_info("2/cats_file.txt")
-print(cats_info)
+# cats_info = get_cats_info("2/cats_file.txt")
+# print(cats_info)
