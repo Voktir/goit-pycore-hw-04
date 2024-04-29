@@ -12,6 +12,5 @@ def total_salary(path: str) -> tuple():
     ret = (total, int(total/str_count))
     return ret
 
-
-total, average = total_salary("1/salary_file.txt")
-print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
+# total, average = total_salary("1/salary_file.txt")
+# print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
