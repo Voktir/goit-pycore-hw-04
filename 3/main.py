@@ -3,19 +3,13 @@ from colorama import Fore, Back, Style
 
 
 def p_elmnts(path):
-    
-    global temp_el
     for el in path.iterdir():
         s = f"{el}"
         if s.find("\\") == -1 :
             spliter = "/"
         if s.find("/") == -1 :
             spliter = "\\"
-        i = 0
-        s = ""
-        while (len(f"{el}".split(spliter)) - 1)*3 > i:
-            s = f" {s}"
-            i += 1 
+        s = " " * ((len(f"{el}".split(spliter)) - 1)*3)
         if el.is_dir():
             print(Fore.CYAN + f"{s}{el.relative_to(Path(el).parent)}\\" + Style.RESET_ALL)
             p_elmnts(el)
